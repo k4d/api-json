@@ -1,9 +1,11 @@
 import express from 'express';
+import data    from '../data/items';
 
-const APP = express();
+const APP  = express();
+const DATA = data;
 
-APP.get( '/', ( require, response ) => {
-    response.send( 'Server is running on port 8080' );
+APP.get( '/', ( request, response ) => {
+    response.json( DATA );
 });
 
 APP.listen( 8080, () => {
