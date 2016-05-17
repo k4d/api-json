@@ -1,0 +1,23 @@
+{
+  "name": "api-json",
+  "version": "1.0.0",
+  "description": "Simple static JSON REST API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k4d/api-json.git"
+  },
+  "keywords": [],
+  "author": "Mikalai Siskevich <n.siskevich@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/k4d/api-json/issues"
+  },
+  "homepage": "https://github.com/k4d/api-json#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}

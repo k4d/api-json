@@ -1,2 +1,2 @@
 # api-json
-Simple static JSON REST API.
+Simple static JSON REST API
