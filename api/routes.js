@@ -1,24 +1,14 @@
-import data from '../data/items';
+import {ItemController} from './ItemController';
 
-const DATA = data;
+let controller = new ItemController();
 
-let json = {
-	data : null
-};
-
-export function getAll ( request, response ) {
-
-	json.data = DATA;
-
-	return response.json( json );
+export function getItems ( request, response ) {
+	return response.json( controller.getItems() );
 }
 
 export function getItemById ( request, response ) {
 
-	let id = parseInt( request.params.id ),
-		find = DATA.find( entry => entry.id === id )
+	let id = parseInt( request.params.id );
 
-	json.data = ( find !== undefined ) ? find : {};
-
-	return response.json( json );
+	return response.json( controller.getItemById( id ) );
 }
